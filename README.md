@@ -48,9 +48,9 @@ It has to contain the following command arguments
   This application is command line driven.
   
 ###### Windows:
-    ```
-    java -jar isql.jar [Query Type] [Input File Name OR Query] [Output File Name] [Optional arg: Header]
-    ```
+```
+java -jar isql.jar [Query Type] [Input File Name OR Query] [Output File Name] [Optional arg: Header]
+```
 
 ###### Examples:
 ```
