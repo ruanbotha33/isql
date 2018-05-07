@@ -7,22 +7,22 @@ More DB support to come at a later version for right now only Microsoft SQL is s
 
 ## Before you start you need to initialize your db.config file. Save a file in  the same directory as your jar file named "db.config"
 
-`username=mysqlusername
+```username=mysqlusername
 password=mysqlusernamepassword
 connection=jdbc:sqlserver://IPTOMYMACHINE:YOURPORT;databaseName=MYDBNAME
-driver=com.microsoft.sqlserver.jdbc.SQLServerDriver  (ONLY DRIVER CURRENTLY SUPPORTED)`
+driver=com.microsoft.sqlserver.jdbc.SQLServerDriver  (ONLY DRIVER CURRENTLY SUPPORTED)```
 
 ## Example DB.config file
-  `username=dbreporter
+  ```username=dbreporter
   password=dba123
   connection=jdbc:sqlserver://192.168.1.20:1433;databaseName=EMPLOYEES
-  driver=com.microsoft.sqlserver.jdbc.SQLServerDriver`
+  driver=com.microsoft.sqlserver.jdbc.SQLServerDriver```
 
 It has to contain the following command arguments
 
 ## --Command Line Arguments--
 
-`[Query Type] [Input File Name OR Query] [Output File Name] [Optional arg: Header]`
+```[Query Type] [Input File Name OR Query] [Output File Name] [Optional arg: Header]```
 
 ###### Query Type:
   Q This is a raw SQL query directly into command line. Ideally meant for quick Select * from Queries. (Not ideal for large queries)
@@ -42,11 +42,11 @@ It has to contain the following command arguments
   This application is command line driven.
   
   Windows:
-    `java -jar isql.jar [Query Type] [Input File Name OR Query] [Output File Name] [Optional arg: Header]`
+    ```java -jar isql.jar [Query Type] [Input File Name OR Query] [Output File Name] [Optional arg: Header]```
 
 ###### Examples:
-    `Java -jar isql.jar Q "SELECT * FROM dbo.EMPLOYEE" "EMPLOYEES.txt"`
-    `Java -jar isql.jar F "Employee.sql" "Employees.txt"`
+    ```Java -jar isql.jar Q "SELECT * FROM dbo.EMPLOYEE" "EMPLOYEES.txt"```
+    ```Java -jar isql.jar F "Employee.sql" "Employees.txt"```
 ###### With Header
-    `Java -jar isql.jar Q "SELECT * FROM dbo.EMPLOYEE" "EMPLOYEES.txt" "FirstName|LastName|ID"`
-    `Java -jar isql.jar F "Employee.sql" "Employees.txt" "FirstName|LastName|ID"`
+    ```Java -jar isql.jar Q "SELECT * FROM dbo.EMPLOYEE" "EMPLOYEES.txt" "FirstName|LastName|ID"```
+    ```Java -jar isql.jar F "Employee.sql" "Employees.txt" "FirstName|LastName|ID"```
