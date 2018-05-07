@@ -53,12 +53,12 @@ It has to contain the following command arguments
     ```
 
 ###### Examples:
-    ```
-    Java -jar isql.jar Q "SELECT * FROM dbo.EMPLOYEE" "EMPLOYEES.txt"
-    Java -jar isql.jar F "Employee.sql" "Employees.txt"
-    ```
+```
+Java -jar isql.jar Q "SELECT * FROM dbo.EMPLOYEE" "EMPLOYEES.txt"
+Java -jar isql.jar F "Employee.sql" "Employees.txt"
+```
 ###### With Header
-    ```
-    Java -jar isql.jar Q "SELECT * FROM dbo.EMPLOYEE" "EMPLOYEES.txt" "FirstName|LastName|ID"
-    Java -jar isql.jar F "Employee.sql" "Employees.txt" "FirstName|LastName|ID"
-    ```
+```
+Java -jar isql.jar Q "SELECT * FROM dbo.EMPLOYEE" "EMPLOYEES.txt" "FirstName|LastName|ID"
+Java -jar isql.jar F "Employee.sql" "Employees.txt" "FirstName|LastName|ID"
+```
