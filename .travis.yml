@@ -1,0 +1,17 @@
+language: java
+
+jdk:
+  - oraclejdk8
+
+os:
+  - linux
+
+branches:
+  only:
+    - master
+  
+notifications:
+  email: false
+  
+before_install:
+ - chmod +x gradlew
