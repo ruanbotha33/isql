@@ -5,19 +5,19 @@ More DB support to come at a later version for right now only Microsoft SQL is s
 
 <a href="https://files.fm/f/key3qdsr">Download The Runnable Jar</a>
 
-###Before you start you need to initialize your db.config file.
-###Save a file in  the same directory as your jar file named "db.config"
+###### Before you start you need to initialize your db.config file.
+###### Save a file in  the same directory as your jar file named "db.config"
 
 `username=mysqlusername
 password=mysqlusernamepassword
 connection=jdbc:sqlserver://IPTOMYMACHINE:YOURPORT;databaseName=MYDBNAME
 driver=com.microsoft.sqlserver.jdbc.SQLServerDriver  (ONLY DRIVER CURRENTLY SUPPORTED)`
 
-###Example DB.config file
+###### Example DB.config file
   `username=dbreporter
   password=dba123
-  connection=jdbc:sqlserver://192.168.1.20:1433;databaseName=EMPLOYEES`
-  driver=com.microsoft.sqlserver.jdbc.SQLServerDriver
+  connection=jdbc:sqlserver://192.168.1.20:1433;databaseName=EMPLOYEES
+  driver=com.microsoft.sqlserver.jdbc.SQLServerDriver'
 
 It has to contain the following command arguments
 
