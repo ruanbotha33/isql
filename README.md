@@ -1,4 +1,4 @@
-# isql {Version 1.0} [![Build Status](https://travis-ci.org/ruanbotha33/isql.svg?branch=master)](https://travis-ci.org/ruanbotha33/isql)
+# isql {Version 1.0} [![Build Status](https://travis-ci.org/ruanbotha33/isql.svg?branch=master)](https://travis-ci.org/ruanbotha33/isql) [![Coverage Status](https://coveralls.io/repos/github/ruanbotha33/isql/badge.svg?branch=master)](https://coveralls.io/github/ruanbotha33/isql?branch=master)
 Quick way to pull records out of MSSQL and put them into a text file.
 
 More DB support to come at a later version for right now only Microsoft SQL is supported.
